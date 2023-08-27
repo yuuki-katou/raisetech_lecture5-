@@ -4,11 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-public class HelloController {
+public class StudentController {
     List<Student> students = List.of(
             new Student("山田太郎", "xxx@example.co.jp", "java"),
             new Student("橋本二郎", "xxo@example.co.jp", "java"),
