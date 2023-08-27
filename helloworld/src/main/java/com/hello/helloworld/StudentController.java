@@ -14,8 +14,8 @@ public class HelloController {
             new Student("橋本二郎", "xxo@example.co.jp", "java"),
             new Student("小川三郎", "xoo@example.co.jp", "AWS"));
 
-    @GetMapping("/hello")
-    public List<Student>hello(@RequestParam(required = false) String name) {
+    @GetMapping("/student")
+    public List<Student>student(@RequestParam(required = false) String name) {
         if(name == null || name.isEmpty()){
             return students;
         }
